@@ -6,6 +6,7 @@ typedef struct Player {
     unsigned int score;
 } plr;
 
+void computer_move();
 void init_board(char board[3][3]);
 void print_board(const char board[3][3]);
 int evaluate_board(const char board[3][3]);

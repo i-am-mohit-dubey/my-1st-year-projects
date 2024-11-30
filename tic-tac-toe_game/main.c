@@ -6,7 +6,6 @@ typedef struct Player {
     unsigned int score;
 } plr;
 
-void computer_move();
 void init_board(char board[3][3]);
 void print_board(const char board[3][3]);
 int evaluate_board(const char board[3][3]);
@@ -17,8 +16,10 @@ int main(void) {
     plr p1 = {'X', 0}, p2 = {'O', 0};
     init_board(board);
     while (true) {
+        plr* turn = &p1;
         print_scores(&p1, &p2);
         print_board(board);
+        
     }
 }
 
